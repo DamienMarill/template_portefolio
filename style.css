@@ -14,6 +14,7 @@
     --spacing-small: 0.5rem;
     --spacing-medium: 1rem;
     --spacing-large: 2rem;
+    --spacing-deux-tiers: 0.6667rem;
 }
 
 * {
@@ -133,15 +134,16 @@ footer {
     .projects {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .project {
-        flex-basis: calc(50% - 0.75rem);
+        flex-basis: calc(50% - var(--spacing-small));
     }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
     .project {
-        flex-basis: calc(33.333% - 1rem);
+        flex-basis: calc(33.333% - var(--spacing-deux-tiers));
     }
 }
